@@ -23,3 +23,15 @@ model session {
 model shopify_sessions_migrations {
   migration_name String @id @db.VarChar(255)
 }
+
+model SavedCart {
+  id         Int      @id @default(autoincrement())
+  customerId String
+  shop       String
+  items      Json
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([customerId, shop])
+  @@index([shop])
+}

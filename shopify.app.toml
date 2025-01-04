@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ea0aa75dd4046fea6f0e3203d6d8a821"
+application_url = "https://be-requirement-divx-choose.trycloudflare.com"
+embedded = true
+name = "boa-home-task-BF"
+handle = "boa-home-task-bf"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://be-requirement-divx-choose.trycloudflare.com/auth/callback",
+  "https://be-requirement-divx-choose.trycloudflare.com/auth/shopify/callback",
+  "https://be-requirement-divx-choose.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "home-assignment-234.myshopify.com"
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
